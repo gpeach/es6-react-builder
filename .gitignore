@@ -1,5 +1,6 @@
-nbproject
-node_modules
+/nbproject/
+/node_modules/
 .DS_Store
-test/coverage
-test/results
+/test/coverage/
+/test/results/
+/public_html/docs/

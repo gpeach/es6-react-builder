@@ -13,7 +13,8 @@
   "scripts": {
     "karmatest": "karma start karma.conf.js",
     "build": "webpack --color",
-    "buildreact": "webpack --color --config webpack.config-react.js"
+    "buildreact": "webpack --color --config webpack.config-react.js",
+    "dox": "./node_modules/.bin/jsdoc ./public_html/src/goodbye.js --destination ./public_html/docs"
   },
   "dependencies": {},
   "devDependencies": {
@@ -44,6 +45,7 @@
     "istanbul-instrumenter-loader": "^1.0.0",
     "jest": "^16.0.1",
     "jquery": "^2.2.4",
+    "jsdoc": "^3.4.2",
     "jsdom": "^9.5.0",
     "jshint": "^2.9.3",
     "jshint-loader": "^0.8.3",
