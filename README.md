@@ -3,7 +3,7 @@
 
 ### npm run jest
 
-* place tests in the __tests__/ folder
+* place tests in the \__tests__/ folder
 
 ### gulp t OR npm run karmatest
 
