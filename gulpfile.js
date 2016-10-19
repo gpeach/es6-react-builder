@@ -5,7 +5,7 @@ var sloc = require('gulp-sloc');
 var exec = require('exec');
 
 gulp.task('sloc', function () {
-    gulp.src(['./public_html/js/**/*.js'])
+    gulp.src(['./public_html/src/**/*.js'])
             .pipe(sloc());
 });
 
@@ -15,7 +15,7 @@ gulp.task('t', ['test', 'sloc'], function () {
         server: {
             baseDir: "./"
         },
-        startPath: "/public_html/coverage/Chrome%2053.0.2785%20(Mac%20OS%20X%2010.11.4)/index.html"
+        startPath: "./test/coverage/Chrome%2053.0.2785%20(Mac%20OS%20X%2010.11.4)/index.html"
     });
 });
 
@@ -26,19 +26,19 @@ gulp.task('b', ['build', 'sloc'], function () {
         server: {
             baseDir: "./"
         },
-        startPath: "/public_html/html/index.html"
+        startPath: "/public_html/html/hello.html"
     });
 });
 
 gulp.task('test', function () {
-    exec('karma start karma.conf.js', function (err, stdout, stderr) {
+    exec('./node_modules/karma/bin/karma start karma.conf.js', function (err, stdout, stderr) {
     console.log(stdout);
     console.log(stderr);
   });
 });
 
 gulp.task('build', function () {
-    exec('webpack --color', function (err, stdout, stderr) {
+    exec('./node_modules/.bin/webpack --color', function (err, stdout, stderr) {
     console.log(stdout);
     console.log(stderr);
   });

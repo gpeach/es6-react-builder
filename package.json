@@ -11,9 +11,9 @@
   "author": "gpeach",
   "contributors": [],
   "scripts": {
-    "karmatest": "karma start karma.conf.js",
-    "build": "webpack --color",
-    "buildreact": "webpack --color --config webpack.config-react.js",
+    "karmatest": "./node_modules/karma/bin/karma start karma.conf.js",
+    "build": "./node_modules/.bin/webpack --color",
+    "buildreact": "./node_modules/.bin/webpack --color --config webpack.config-react.js",
     "dox": "./node_modules/.bin/jsdoc ./public_html/src/goodbye.js --destination ./public_html/docs"
   },
   "dependencies": {},
@@ -36,6 +36,7 @@
     "enzyme": "^2.4.1",
     "exec": "^0.2.1",
     "gulp": "^3.9.1",
+    "gulp-sloc": "^1.0.4",
     "gulp-watch": "^4.3.9",
     "http-server": "^0.9.0",
     "imports-loader": "^0.6.5",
