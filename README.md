@@ -14,7 +14,6 @@
 * produces minified bundle and sourcemap
 * build does es6/es2015
 * buildreact does react
-* reports lines of code
 
 ### npm run dox
 
