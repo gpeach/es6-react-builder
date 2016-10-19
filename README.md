@@ -1,9 +1,14 @@
 
 ## COMMANDS
 
+### npm run jest
+
+* place tests in the __tests__/ folder
+
 ### gulp t OR npm run karmatest
 
 * runs mocha tests through karma via chrome
+* place tests in the test/ folder
 * produces coverage report
 
 ### gulp b OR npm run build OR npm run buildreact
@@ -29,7 +34,8 @@
 
 * add gulp watches to rebundle/retest
 * delete unneeded entries from package.json
-* add jest/enzyme test setup for react
+* add enzyme test setup for react
+* fix jest code coverage - https://github.com/deepsweet/istanbul-instrumenter-loader/issues/3
 * rework gulp so it doesnt sync until task finishes/content is ready
 * SASS compilation
 * image optimization

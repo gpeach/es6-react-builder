@@ -15,7 +15,7 @@
     "buildreact": "./node_modules/.bin/webpack --color --config webpack.config-react.js",
     "dox": "./node_modules/.bin/jsdoc ./public_html/src/goodbye.js --destination ./public_html/docs",
     "karmatest": "./node_modules/karma/bin/karma start karma.conf.js",
-    "test": "jest"
+    "jest": "jest --coverage"
   },
   "dependencies": {
     "react": "^15.3.2",
