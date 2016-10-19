@@ -12,8 +12,9 @@
 * transpiles via babel
 * instruments coverage
 * produces minified bundle and sourcemap
-* build does es2015
+* build does es6/es2015
 * buildreact does react
+* reports lines of code
 
 ### npm run dox
 
@@ -29,6 +30,9 @@
 
 * add gulp watches to rebundle/retest
 * delete unneeded entries from package.json
-* add simple jest tests
-* rework gulp so it doesnt sync until content is ready
+* add jest/enzyme test setup for react
+* rework gulp so it doesnt sync until task finishes/content is ready
+* SASS compilation
+* image optimization
+
 
