@@ -16,6 +16,7 @@
 * runs webpack
 * transpiles via babel
 * instruments coverage
+* compiles sass
 * produces minified bundle and sourcemap
 * build does es6/es2015
 * buildreact does react
@@ -37,7 +38,6 @@
 * add enzyme test setup for react
 * fix jest code coverage - https://github.com/deepsweet/istanbul-instrumenter-loader/issues/3
 * rework gulp so it doesnt sync until task finishes/content is ready
-* SASS compilation
 * image optimization
 
 
