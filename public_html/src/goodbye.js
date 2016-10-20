@@ -1,4 +1,5 @@
 require('jquery');
+require('../scss/style.scss');
 import { bye2 } from './bye2';
 
 /**
